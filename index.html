@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人自述書 - 王可靜</title>
-    <!-- 引入 Tailwind CSS 以進行快速樣式設計 -->
+    <title>王可靜個人自述書</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 引入 Google Fonts 以獲得更美觀的字體 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* 使用 Noto Sans TC 作為中文字體，Inter 作為英文字體 */
         body {
-            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            font-family: 'Noto Sans TC', sans-serif;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
 
-    <!-- 主要容器 -->
-    <div class="container mx-auto p-4 sm:p-8 max-w-5xl">
+    <!-- Main container for the content -->
+    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center max-w-2xl w-full mx-auto">
         
-        <!-- 頁首 -->
-        <header class="text-center mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">個人自述書</h1>
-            <p class="text-lg text-gray-600 mt-2">王可靜</p>
-        </header>
+        <!-- Main Title -->
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+            《王可靜個人自述書》
+        </h1>
+        
+        <!-- Subtitle -->
+        <h2 class="text-xl md:text-2xl text-gray-600 mb-8">
+            國立臺灣大學醫學系
+        </h2>
+        
+        <!-- Button to open the statement -->
+        <button 
+            onclick="window.open('https://online.flippingbook.com/view/424624905/2/', '_blank')"
+            class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg mb-10">
+            開啟自述書
+        </button>
+        
+        <!-- Image display -->
+        <div class="flex justify-center">
+            <img 
+                src="https://storage.googleapis.com/gemini-prod-us-west1-423207913/uploaded/個人自述書-王可靜.jpg" 
+                alt="王可靜個人自述書封面" 
+                class="w-1/2 rounded-lg shadow-md"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x800/e2e8f0/4a5568?text=Image+Not+Found';">
+        </div>
 
-        <!-- 主要內容區域 -->
-        <main class="flex justify-center">
-            <div class="w-full bg-white p-4 sm:p-6 rounded-xl shadow-lg border border-gray-200">
-                <p class="text-center text-gray-600 mb-4">點擊下方連結或圖片，以燈箱效果開啟自述書。</p>
-                <!-- 這是您提供的 FlippingBook 嵌入代碼 -->
-                <a href="https://online.flippingbook.com/view/424624905/" class="fbo-embed" data-fbo-id="4ad37dd583" data-fbo-ratio="3:2" data-fbo-lightbox="yes" data-fbo-width="100%" data-fbo-height="auto" data-fbo-version="1" style="max-width: 100%; border-radius: 8px; overflow: hidden;">個人自述書-王可靜</a><script async defer src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=424624905"></script>
-            </div>
-        </main>
-
-        <!-- 頁尾 -->
-        <footer class="text-center mt-12 text-gray-500 text-sm">
-            <p>&copy; 2024 王可靜. All Rights Reserved.</p>
-        </footer>
     </div>
 
 </body>
