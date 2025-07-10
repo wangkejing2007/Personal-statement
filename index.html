@@ -36,11 +36,16 @@
         
         <!-- Image display -->
         <div class="flex justify-center">
+            <!-- Image source is now a relative path. Make sure the image file is in the same folder. -->
             <img 
-                src="https://storage.googleapis.com/gemini-prod-us-west1-423207913/uploaded/個人自述書-王可靜.png" 
+                src="個人自述書-王可靜.png" 
                 alt="王可靜個人自述書封面" 
                 class="w-1/2 rounded-lg shadow-md"
-                onerror="this.onerror=null;this.src='https://placehold.co/600x800/e2e8f0/4a5568?text=Image+Not+Found';">
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <!-- Fallback text in case image fails to load -->
+            <div style="display:none;" class="w-1/2 rounded-lg shadow-md bg-gray-200 flex items-center justify-center aspect-[3/4]">
+                <span class="text-gray-500">無法載入圖片</span>
+            </div>
         </div>
 
     </div>
